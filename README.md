@@ -4,7 +4,7 @@ A template repository with wiki for a team project at JCE's software engineering
 
 ![project logo (this one is taken from basecamp)](http://klipfolio.com/sites/default/files/integrations/basecamp.png)
 
-## Please visit our [live application](http://demo.azurewebsites.net/)
+## Please visit our [live application](https://demo.reactstarterkit.com/)
 - Alright, currently only a landing page...
 
 [![Join the chat at https://gitter.im/robi-y/seproject-team-template](https://badges.gitter.im/robi-y/seproject-team-template.svg)](https://gitter.im/robi-y/seproject-team-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -16,12 +16,12 @@ This project is developed as part of the requirements for a [software engineerin
 
 Please visit our wiki for furthur project info: 
 
-### [User Manual](../../wiki/development) (empty)
+### [User Manual](../../wiki/user-manual) (empty)
 
 ### [Team Page](../../wiki/team)
 
 ### Project Documents
-- [Project Idea](docs/idea.pdf) ([Presentations](docs/idea-slides.pdf))
+- [Project Idea](docs/idea.pdf) ([Presentation](docs/idea-slides.pdf))
 - [Project Inception](../../wiki/inception)
 - [Software Requirements Specification]()
 - [Software Design Specification]()
