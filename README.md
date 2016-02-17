@@ -9,9 +9,10 @@ A template repository with wiki for a team project at JCE's software engineering
 
 [![Join the chat at https://gitter.im/robi-y/seproject-team-template](https://badges.gitter.im/robi-y/seproject-team-template.svg)](https://gitter.im/robi-y/seproject-team-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## [Issue Management](https://github.com/robi-y/seproject-team-template/issues)
+## [Issue Board](https://huboard.com/robi-y/seproject-team-template#/)
 
-Disclaimer: this project is developed as part of the requirements for a [software engineering course](https://github.com/jce-il/se-class/wiki) at the software engineering department - [Azrieli College of Engineering](http://www.jce.ac.il/), Jerusalem, Israel.
+## Disclaimer
+This project is developed as part of the requirements for a [software engineering course](https://github.com/jce-il/se-class/wiki) at the software engineering department - [Azrieli College of Engineering](http://www.jce.ac.il/), Jerusalem, Israel.
 
 Please visit our wiki for furthur project info: 
 
