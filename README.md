@@ -23,8 +23,8 @@ Please visit our wiki for furthur project info:
 ### Project Documents
 - [Project Idea](docs/idea.pdf) ([Presentation](docs/idea-slides.pdf))
 - [Project Inception](../../wiki/inception)
-- [Software Requirements Specification]()
-- [Software Design Specification]()
+- [Software Requirements Specification](../../wiki/srs)
+- [Software Design Specification](../../wiki/sds)
 
 ### Iteration Pages
 - [Iteration 0 - ZFR](../../wiki/iter0-zfr)
