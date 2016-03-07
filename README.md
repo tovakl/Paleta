@@ -1,6 +1,6 @@
-# seproject-team-template
+# Paleta
 
-A template repository with wiki for a team project at JCE's software engineering course
+Website for books publication and paintings.
 
 ![project logo (this one is taken from basecamp)](http://klipfolio.com/sites/default/files/integrations/basecamp.png)
 
