@@ -2,7 +2,7 @@
 
 Website for books publication and paintings.
 
-![project logo (this one is taken from basecamp)](http://klipfolio.com/sites/default/files/integrations/basecamp.png)
+![project logo (this one is taken from basecamp)](https://github.com/Buzz2000/Paleta/blob/master/paleta.png)
 
 ## Please visit our [live application](https://demo.reactstarterkit.com/)
 - Alright, currently only a landing page...
