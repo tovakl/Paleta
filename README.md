@@ -19,12 +19,12 @@ Please visit our wiki for furthur project info:
 ### [User Manual](../../wiki/user-manual) (empty)
 
 ### [Team Page](../../wiki/team)
-[![Batzion](https://avatars2.githubusercontent.com/u/17457207?v=3&s=400)](https://github.com/Buzz2ooo)
-[![Ester](https://avatars3.githubusercontent.com/u/17428816?v=3&s=400)](https://github.com/esterfi)
-[![Lea](https://avatars1.githubusercontent.com/u/17829846?v=3&s=400)](https://github.com/)
-[![Miryam](https://avatars3.githubusercontent.com/u/17599352?v=3&s=140)](https://github.com/miryamamsa)
-[![Shirlley](https://avatars3.githubusercontent.com/u/17456971?v=3&s=400)](https://github.com/shirlleycohen)
-[![Tamar](https://avatars2.githubusercontent.com/u/17456451?v=3&s=400)](https://github.com/tamimamo)
+[![Batzion](https://avatars2.githubusercontent.com/u/17457207?v=3&s=80)](https://github.com/Buzz2ooo)
+[![Ester](https://avatars3.githubusercontent.com/u/17428816?v=3&s=80)](https://github.com/esterfi)
+[![Lea](https://avatars1.githubusercontent.com/u/17829846?v=3&s=80)](https://github.com/)
+[![Miryam](https://avatars3.githubusercontent.com/u/17599352?v=3&s=80)](https://github.com/miryamamsa)
+[![Shirlley](https://avatars3.githubusercontent.com/u/17456971?v=3&s=80)](https://github.com/shirlleycohen)
+[![Tamar](https://avatars2.githubusercontent.com/u/17456451?v=3&s=80)](https://github.com/tamimamo)
 
 ### Project Documents
 - [Project Idea](https://github.com/Buzz2000/Paleta/blob/master/Paleta-proposition.pdf) ([Presentation](https://github.com/Buzz2000/Paleta/blob/master/Paleta.pdf))
