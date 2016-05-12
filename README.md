@@ -20,7 +20,7 @@ Please visit our wiki for furthur project info:
 
 ### [Team Page](../../wiki/team)
 [![Shirlley]](https://github.com/shirlleycohen)
-[![Batzion](https://avatars0.githubusercontent.com/u/17547564?v=3&s=80)](https://github.com/Buzz2ooo)
+[![Batzion](https://avatars3.githubusercontent.com/u/17547564?v=3&s=80)](https://github.com/Buzz2ooo)
 [![Tamar](https://avatars3.githubusercontent.com/u/17547447?v=3&s=80)](https://github.com/tamimamo)
 [![Miryam](https://avatars2.githubusercontent.com/u/17547605?v=3&s=80)](https://github.com/miryamamsa)
 [![Ester](https://avatars3.githubusercontent.com/u/17547447?v=3&s=80)](https://github.com/esterfi)
