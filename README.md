@@ -6,7 +6,8 @@ Website for books publication and paintings.
 
 ## Please visit our [live application](https://demo.reactstarterkit.com/)
 
-[Our chat](https://gitter.im/Buzz2000/Paleta/PaletaGroup)
+## Our chat
+[![Join the chat at https://gitter.im/Buzz2000/Paleta](https://badges.gitter.im/Buzz2000/Paleta.svg)](https://gitter.im/Buzz2000/Paleta/PaletaGroup)
 
 ## [Issue Board](https://huboard.com/robi-y/seproject-team-template#/)
 
