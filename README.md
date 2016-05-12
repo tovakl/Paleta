@@ -5,9 +5,8 @@ Website for books publication and paintings.
 ![project logo (this one is taken from basecamp)](https://github.com/Buzz2000/Paleta/blob/master/paleta.png)
 
 ## Please visit our [live application](https://demo.reactstarterkit.com/)
-- Alright, currently only a landing page...
 
-[![Join the chat at https://gitter.im/robi-y/seproject-team-template](https://badges.gitter.im/robi-y/seproject-team-template.svg)](https://gitter.im/Buzz2000/Paleta/PaletaGroup)
+[Our chat](https://gitter.im/Buzz2000/Paleta/PaletaGroup)
 
 ## [Issue Board](https://huboard.com/robi-y/seproject-team-template#/)
 
