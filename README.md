@@ -9,7 +9,7 @@ Website for books publication and paintings.
 ## Our chat
 [![Join the chat at https://gitter.im/Buzz2000/Paleta](https://badges.gitter.im/Buzz2000/Paleta.svg)](https://gitter.im/Buzz2000/Paleta/PaletaGroup)
 
-## [Issue Board](https://huboard.com/robi-y/seproject-team-template#/)
+## [Issue Board](https://huboard.com/Buzz2000/Paleta)
 
 ## Disclaimer
 This project is developed as part of the requirements for a [software engineering course](https://github.com/jce-il/se-class/wiki) at the software engineering department - [Azrieli College of Engineering](http://www.jce.ac.il/), Jerusalem, Israel.
