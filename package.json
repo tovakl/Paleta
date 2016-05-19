@@ -1,0 +1,11 @@
+{
+  "name": "paleta",
+  "version": "1.0.0",
+  "description": "Web site for paleta books publishing.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

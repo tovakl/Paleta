@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <script src="Client/src/angular.min.js"></script>
+        <script src="Client/src/angular-route.min.js"></script>
+        <script src="Client/src/jquery-2.2.3.min.js"></script>
+        <script src="Client/src/jquery-2.2.3.js"></script>
+        <script src="Client/app.js"></script>
+        <script src="Client/src/bootstrap.min.js"></script>
+
+
+        <script src="Client/controllers/homeController.js"></script>
+        <script src="Client/controllers/booksCatalogController.js"></script>
+        <script src="Client/controllers/cartController.js"></script>
+        <script src="Client/controllers/signUpController.js"></script>
+
+        <link rel="stylesheet" href="Client/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="Client/css/booksCatalogStyle.css">
+
+        <title>PALETA</title>
+</head>
+    <body ng-app="myApp"> <!--[if lte IE 8]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]--> <!-- Add your site or application content here -->
+        <div class="header">
+            <div class="navbar navbar-default" role="navigation" data-spy="affix" data-offset-top="197">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ng-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="ng-navbar-collapse">
+                        <ul class="nav navbar-nav pull-right">
+                            <li><a ng-href="#/contact">צור קשר | </a></li>
+                            <li><a ng-href="#/cart">סל קניות | </a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> הפקת ספרים |  <span class="caret"></span></a>
+                                <ul class="dropdown-menu" >
+                                    <li><a ng-href="#/booksPublish">עריכה</a></li>
+                                    <li><a ng-href="#/booksGraphic">גרפיקה</a></li>
+                                    <li><a ng-href="#/booksPrint">הדפסה</a></li>
+                                </ul>
+                            </li>
+                            <li><a ng-href="#/ReadingTasting">טעימות קריאה | </a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> קטלוג |  <span class="caret"></span></a>
+                                <ul class="dropdown-menu" >
+                                    <li><a ng-href="#/booksCatalog">ספרים</a></li>
+                                    <li><a ng-href="#/paintsCatalog">ציורים</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a ng-href="#home">בית | </a></li>
+                        </ul>
+                        <form class="navbar-form pull-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div ng-view=""></div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <p><span class="glyphicon-heart"></span> from the Paleta team</p>
+            </div>
+        </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    </body>
+</html>

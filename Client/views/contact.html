@@ -1,0 +1,53 @@
+
+
+
+  
+  <div class="col-sm-8" ng-controller="contactController" >
+      
+      <div class="row form-group" >
+        <div class="col-xs-3">
+          <input type="text" class="form-control" id="firstName"  ng-model="firstName" name="firstName" placeholder="First Name" required="">
+        </div>
+        <div class="col-xs-3">
+          <input type="text" class="form-control" id="middleName" ng-model="middletName" name="middletName" placeholder="Middle Name" required="">
+        </div>
+        <div class="col-xs-4">
+          <input type="text" class="form-control" id="lastName" ng-model="lastName" name="lastName" placeholder="Last Name" required="">
+        </div>
+      </div>
+      <div class="row form-group">
+          <div class="col-xs-5">
+          <input type="email" class="form-control" ng-model="email" name="email" placeholder="Email" required="">
+          </div>
+          <div class="col-xs-5">
+          <input type="email" class="form-control" ng-model="phone" name="phone" placeholder="Phone" required="">
+          </div>
+      </div>
+      <div class="row form-group">
+          <div class="col-xs-10">
+          <input type="homepage" class="form-control" ng-model="Website URL" placeholder="Website URL" required="">
+          </div>
+      </div>
+      <div class="row form-group">
+          <div class="col-xs-10">
+            <button class="btn btn-default pull-right">Contact Us</button>
+          </div>
+      </div>
+    
+  </div>
+  <div class="col-sm-3 pull-right">
+
+      <address>
+        <strong>Iatek, LLC.</strong><br>
+        795 Folsom Ave, Suite 600<br>
+        Newport, RI 94107<br>
+        P: (123) 456-7890
+      </address>
+    {{name}}
+      <address>
+        <strong>Email Us</strong><br>
+        <a href="mailto:#">first.last@example.com</a>
+      </address>          
+  </div>
+  
+
