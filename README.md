@@ -23,7 +23,7 @@ Please visit our wiki for furthur project info:
 
 ### Project Documents
 - [Project Idea](../../blob/master/PDFs/Paleta-proposition.pdf) ([Presentation](../../blob/master/PDFs/Paleta.pdf))
-- [Project Inception & Planing (empty)]
+- [Project Inception & Planing](../../wiki/Project-Inception-and-Planning)
 - [Software Requirements Specification](../../wiki/SRS)
 - [Software Design Specification](../../wiki/sds)
 
