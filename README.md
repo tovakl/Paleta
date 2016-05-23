@@ -28,8 +28,8 @@ Please visit our wiki for furthur project info:
 - [Software Design Specification](../../wiki/sds)
 
 ### Iteration Pages
-- [Iteration 0 - ZFR](https://github.com/Buzz2000/Paleta/wiki/ZFR)
-- [Iteration 1 - MVP]()
+- [Iteration 0 - ZFR](../../wiki/ZFR)
+- [Iteration 1 - MVP](../../wiki/MVP)
 - [Iteration 2 - RLC]()
 - [Iteration 3 - TCS]()
 - [Iteration 4 - FCSP]()
