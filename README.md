@@ -22,7 +22,7 @@ Please visit our wiki for furthur project info:
 ![](../../blob/master/IMGs_Paleta/team.jpg)
 
 ### Project Documents
-- [Project Idea](https://github.com/Buzz2000/Paleta/blob/master/Paleta-proposition.pdf) ([Presentation](https://github.com/Buzz2000/Paleta/blob/master/Paleta.pdf))
+- [Project Idea](../../blob/master/PDFs/Paleta-proposition.pdf) ([Presentation](../../blob/master/PDFs/Paleta.pdf))
 - [Project Inception & Planing](../../Project-Inception-and-Planning)
 - [Software Requirements Specification](../../wiki/SRS)
 - [Software Design Specification](../../wiki/sds)
