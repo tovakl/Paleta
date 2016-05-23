@@ -19,7 +19,7 @@ Please visit our wiki for furthur project info:
 ### [User Manual](../../wiki/user-manual) (empty)
 
 ### [Team Page](../../wiki/team)
-![](https://github.com/Buzz2000/Paleta/blob/master/team.jpg)
+![](https://github.com/Buzz2000/Paleta/blob/master/IMG's_Paleta/team.jpg)
 
 ### Project Documents
 - [Project Idea](https://github.com/Buzz2000/Paleta/blob/master/Paleta-proposition.pdf) ([Presentation](https://github.com/Buzz2000/Paleta/blob/master/Paleta.pdf))
