@@ -1,10 +1,10 @@
 # Paleta
 
-Website for books publication and paintings.
+Books publishing for fantastic literature.
 
-![project logo (this one is taken from basecamp)](https://github.com/Buzz2000/Paleta/blob/master/paleta.png)
+![project logo (this one is taken from basecamp)](../../blob/master/IMGs_Paleta/Logo.jpg)
 
-## Please visit our [live application](https://demo.reactstarterkit.com/)
+## Please visit our [live application](http://paletapublishing.azurewebsites.net/#/home)
 
 ## Our chat
 [![Join the chat at https://gitter.im/Buzz2000/Paleta](https://badges.gitter.im/Buzz2000/Paleta.svg)](https://gitter.im/Buzz2000/Paleta/PaletaGroup)
