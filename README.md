@@ -2,7 +2,7 @@
 
 ### Books publishing for fantastic literature.
 
-![project logo (this one is taken from basecamp)](../../blob/master/IMGs_Paleta/Logo.jpg)
+![project logo (this one is taken from basecamp)]<img src="../../blob/master/IMGs_Paleta/Logo.jpg" width="150" height="150">
 
 ## Please visit our [live application](http://paletapublishing.azurewebsites.net/#/home)
 
