@@ -1,6 +1,6 @@
 # Paleta
 
-Books publishing for fantastic literature.
+### Books publishing for fantastic literature.
 
 ![project logo (this one is taken from basecamp)](../../blob/master/IMGs_Paleta/Logo.jpg)
 
