@@ -5,4 +5,10 @@
 
 myApp.controller('booksCatalogController', function ($scope){
 
+    $scope.functionName = function () {
+        $http.get()
+    }
+
+
+
 });
