@@ -3,7 +3,7 @@ function booksCatalogController($scope, $http){
     onLoad();
 
     function onLoad(){
-        http.get('/booksCatalog/loadBooks')
+        $http.get('/booksCatalog/loadBooks')
             .success(function(data){
                 console.log(data);
         })
