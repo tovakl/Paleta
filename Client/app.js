@@ -54,6 +54,6 @@ myApp.config(['$routeProvider',function($routeProvider){
 		.otherwise({redirectTo:'/home'});
 }]);
 
-app.controller("booksCatalogServerController", ["$scope", "$http", booksCatalogServerController]);
+myApp.controller("booksCatalogController", ["$scope", "$http", booksCatalogController]);
 
 
