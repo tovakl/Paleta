@@ -1,49 +1,37 @@
-<link rel="stylesheet" type="text/css" href="css/contactStyle.css">
+
 
 <div class="col-sm-8 up" ng-controller="contactController" >
+    <h4>לפניה לשירות - אנא מלאו את הטופס ואנו נחזור אליכם.</h4>
     <div class=" main-form">
         <div class="row form-group" >
-            <div class="col-xs-3">
-                <input type="text" class="form-control" id="firstName"  ng-model="firstName" name="firstName" placeholder="First Name" required="">
+            <div class="col-md-7">
+                <input type="text" class="form-control" id="firstName"  ng-model="firstName" name="firstName" placeholder="שם פרטי" required="">
             </div>
         </div>
 
         <div class="row form-group" >
-            <div class="col-xs-4">
-                <input type="text" class="form-control" id="lastName" ng-model="lastName" name="lastName" placeholder="Last Name" required="">
+            <div class="col-md-7">
+                <input type="text" class="form-control" id="lastName" ng-model="lastName" name="lastName" placeholder="שם משפחה" required="">
             </div>
         </div>
         <div class="row form-group">
-            <div class="col-xs-5">
-                <input type="email" class="form-control" ng-model="email" name="email" placeholder="Email" required="">
+            <div class="col-md-7">
+                <input type="email" class="form-control" ng-model="email" name="email" placeholder="דוא'ל" required="">
             </div>
         </div>
         <div class="row form-group" >
-            <div class="col-xs-5">
-                <input type="email" class="form-control" ng-model="phone" name="phone" placeholder="Phone" required="">
+            <div class="col-md-7">
+                <input type="email" class="form-control" ng-model="phone" name="phone" placeholder="פלאפון" required="">
             </div>
         </div>
 
         <div class="row form-group">
-            <div class="col-xs-4">
-                <button class="btn btn-default pull-right">Contact Us</button>
+            <div class="col-md-2">
+                <button class="btn btn-default pull-left">צור קשר</button>
             </div>
         </div>
 
     </div>
-    <div class="col-sm-3 pull-right">
 
-        <address>
-            <strong>Iatek, LLC.</strong><br>
-            795 Folsom Ave, Suite 600<br>
-            Newport, RI 94107<br>
-            P: (123) 456-7890
-        </address>
-        {{name}}
-        <address>
-            <strong>Email Us</strong><br>
-            <a href="mailto:#">first.last@example.com</a>
-        </address>
-    </div>
   
 
