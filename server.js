@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 
 
 config={
-    mongoURL:'mongodb://paleta:123@ds038739.mlab.com:38739/paleta_db'
+    mongoURL:'mongodb://paleta:12345@ds021034.mlab.com:21034/paleta_db'
 };
 
 var options=
@@ -19,7 +19,7 @@ var options=
     }
 };
 
-var db = mongoose.createConnection(config.mongoURL, options);
+var db = mongoose.createConnection(config.mongoURL);//, options);
 
 //db = mongoose.connection;// a global connection variable
 // Event handlers for Mongoose
