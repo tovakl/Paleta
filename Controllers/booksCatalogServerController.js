@@ -8,10 +8,8 @@ var config=require('../configFile.json');
 var mongoose = require ('mongoose');
 var db=mongoose.createConnection(config.connectionString);
 
-
 var catalogSchema = require('../Database/catalogModel');
-
-var Catalog = db.model('Catalog',catalogSchema);
+var BooksCatalog = db.model('BooksCatalog',catalogSchema);
 
 //routing
 router.get('/loadBooks', loadBooks);
@@ -19,9 +17,12 @@ router.get('/loadBooks', loadBooks);
 module.exports = router;
 
 function loadBooks(req, res){
-    console.log("Connection GOOD!");
-    var books={};
-    db.tblBooksCatalog.find({},function(err,books ){
+    //Creating collection books catalog, inserting documents
+    var obj = new BooksCatalog({id:1,URL_cover:"",title:"אביויו",description:"ספר פעוטות"});
+    obj.save();
+
+    //Getting all documents from books catalog collection and put in books array
+    BooksCatalog.find({},function(err,books ){
         console.log("books:"+ JSON.stringify(books));
         res.json(books);
     });
