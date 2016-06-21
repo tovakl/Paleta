@@ -1,14 +1,16 @@
-/**
- * Created by myriam on 07/04/2016.
- */
+function booksCatalogController($scope, $http){
+    $scope.onLoad=onLoad;
+    onLoad();
 
-
-myApp.controller('booksCatalogController', function ($scope){
-
-    $scope.functionName = function () {
-        $http.get()
+    function onLoad(){
+        http.get('/booksCatalog/loadBooks')
+            .success(function(data){
+                console.log(data);
+        })
+            .error(function(data){
+                console.log("ERROR");
+            });
     }
 
 
-
-});
+}

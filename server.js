@@ -2,48 +2,22 @@
 var express = require('express'); // for routing
 var app = express(); //init the server
 var path = require('path');
-var mongoose = require('mongoose');
-//var catalogSchema = require('./DataBase/catalog');
-//var Catalog = mongoose.model('Catalog', catalogSchema);
-
-
-config={
-    mongoURL:'mongodb://paleta:12345@ds021034.mlab.com:21034/paleta_db'
-};
-
-var options=
-{
-    server:
-    {
-        auto_reconnect: true,
-    }
-};
-
-var db = mongoose.createConnection(config.mongoURL);//, options);
-
-//db = mongoose.connection;// a global connection variable
-// Event handlers for Mongoose
-db.on('error', function (err) {
-    console.log('Mongoose: Error: ' + err);
-});
-db.on('open', function() {
-    console.log('Mongoose: Connection established');
-});
-db.on('disconnected', function() {
-    console.log('Mongoose: Connection stopped, recconect');
-    mongoose.connect(config.mongoURL, options);
-});
-db.on('reconnected', function () {
-    console.info('Mongoose reconnected!');
-});
-
+//var port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname+'/Client'));
+// app.use('/app', express.static('app'));
+app.use('/booksCatalog',require('./Controllers/booksCatalogServerController'));
+
 app.get('/',function (req, res) {
       res.sendFile(path.join(__dirname+'/Client/index.html'));
 });
 
+// app.get('/', function (req, res) {
+//     return res.redirect('/app');
+// });
+
 //listen on port
 var server = app.listen(3000, function(){
-    console.log('Server listening at 3000');
+   // console.log('Server listening at http://' + server.address().address + ':' + server.address().port);
+    console.log("SERVER IS ON");
 });

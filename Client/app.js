@@ -1,7 +1,9 @@
 
 var myApp = angular.module("myApp", ["ngRoute"]);
 
-myApp.config(function($routeProvider){
+//app.controller("booksCatalogServerController", ["$scope", "$http", booksCatalogServerController]);
+
+myApp.config(['$routeProvider',function($routeProvider){
 	$routeProvider
 		.when('/home', {
 			templateUrl: "views/home.html",
@@ -52,6 +54,6 @@ myApp.config(function($routeProvider){
 			controller: "tasteController"
 		})
 		.otherwise({redirectTo:'/home'});
-});
+}]);
 
 
