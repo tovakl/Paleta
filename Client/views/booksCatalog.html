@@ -1,165 +1,29 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 4ee7d594c6cce55e6bd8888b04915942d2079141
 
 <div class="col-sm-12">
     <div class="container-fluid text-center">
         <div class="col-sm-10 text-center">
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
+            <div class="row" >
+                <div  ng-repeat="book in books track by $index" class="col-xs-6 col-md-3">
                     <div class="thumbnail">
-                        <div class="caption">
-                            <h4>ליאורה</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/liora.jpg" alt="Liora" height="220" width="160">
+                            <div class="caption">
+                                <h5 class="bookTitle">{{book.title}}</h5>
+                                <div class="img-ph">
+                                    <img src="../img/Covers/{{book.URL_cover}}" alt={{books.URL_cover}} height="220" width="160">
+                                </div>
+                                <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
                             </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
                     </div>
                 </div>
-<<<<<<< HEAD
-=======
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h4>{{books.title}}</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/abo-yoyo.jpg" alt="abo-yoyo" height="220" width="160">
-                            </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h4>הכידקל</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/ahidekel.jpg" alt="ahidekel" height="220" width="160">
-                            </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-
-                        <div class="caption">
-                            <h4>עקבות של אור</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/akevot-shel-or.jpg" alt="akevot-shel-or" height="220" width="160">
-                            </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-
-                        <div class="caption">
-                            <h4>'המחשבות של תמי א</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/amahshavot-shel-tami-1.jpg" alt="amahshavot-shel-tami-1" height="220" width="160">
-                            </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-
-                        <div class="caption">
-                            <h4>'המחשבות של תמי ב</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/amahshavot-shel-tami-2.jpg" alt="amahshavot-shel-tami-2" height="220" width="160">
-                            </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-
-                        <div class="caption">
-                            <h4>בקצה השמיים</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/bektze-hashamayin.jpg" alt="bektze-hashamayin" height="220" width="160">
-                            </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-
-                        <div class="caption">
-                            <h4>הפרש</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/haparash.jpg" alt="haparash" height="220" width="160">
-                            </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-
-                        <div class="caption">
-                            <h4>נוגעת בצל</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/nogaat-batzel.jpg" alt="nogaat-batzel" height="220" width="160">
-                            </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-
-                        <div class="caption">
-                            <h4>שוקו וניל</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/shoko-vanil.jpg" alt="shoko-vanil" height="220" width="160">
-                            </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-
-                        <div class="caption">
-                            <h4>יוחאי</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/yochay.jpg" alt="yochay" height="220" width="160">
-                            </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-
-                        <div class="caption">
-                            <h4>יומן בתרמיל</h4>
-                            <div class="img-ph">
-                                <img src="img/catalog/yoman-betarmil.jpg" alt="yoman-betarmil" height="220" width="160">
-                            </div>
-                            <p><center><a href="#" class="btn btn-default" role="button">הוסף לסל</a></center></p>
-                        </div>
-                    </div>
-                </div>
->>>>>>> 4ee7d594c6cce55e6bd8888b04915942d2079141
             </div>
         </div>
-        <div class="col-sm-2 sidenav">
+        <!--div class="col-sm-2 sidenav">
             <div class="well">
                 <p>ADS</p>
             </div>
             <div class="well">
                 <p>ADS</p>
             </div>
-        </div>
+        </div-->
     </div>
 </div>

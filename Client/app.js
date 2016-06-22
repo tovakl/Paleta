@@ -51,6 +51,10 @@ myApp.config(['$routeProvider',function($routeProvider){
 			templateUrl: "views/taste.html",
 			controller: "tasteController"
 		})
+		.when('/book', {
+			templateUrl: "views/book.html",
+			controller: "bookController"
+		})
 		.otherwise({redirectTo:'/home'});
 }]);
 

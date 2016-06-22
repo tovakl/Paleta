@@ -1,5 +1,5 @@
 function booksCatalogController($scope, $http){
-    
+
     $scope.books = {};
     $scope.onLoad=onLoad;
     onLoad();
@@ -7,7 +7,7 @@ function booksCatalogController($scope, $http){
     function onLoad(){
         $http.get('/booksCatalog/loadBooks')
             .success(function(data){
-                $scope.books = data[0];
+                $scope.books = data;
                 console.log(data);
         })
             .error(function(data){
