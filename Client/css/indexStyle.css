@@ -29,6 +29,23 @@
 
 }
 
+.up{
+    float: right;
+
+}
+
+.bt {
+    float: right;
+    display: inline;
+    margin-top: 20px;
+    padding:5px;
+    background-color: cornsilk;
+    border: none;
+    background: linear-gradient(to right, rgba(255,0,0,0), #fefdff);
+
+}
+
+
 
 .nav {
     margin-left: 0px;

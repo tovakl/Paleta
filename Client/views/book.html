@@ -1,19 +1,16 @@
 <div class="col-sm-12">
     <div class="container-fluid text-center">
+
         <div class="view">
             <div class="bookImg">
-                <img src="../img/home/Book2.jpg" height="450" width="300"/>
+                <img src="../img/Covers/{{bookInfo[0].URL_cover}}" alt={{bookInfo[0].URL_cover}} height="450" width="300"/>
             </div>
             <div class="bookDes col-md-6">
-                <h3 class="bookTitle">TITLE</h3>
+                <h3 class="bookTitle">{{bookInfo[0].title}}</h3>
                 <p>
-                    ifbjiejbiotjoiimimivronaosfiufuhuhfd<br/>
-                    jboijoeitjboijiejoijoijijvirjiojrgimviie<br/>
-                    iejbeijiojthijeoitjboiejoirjoierjbeoibjiejboijerR<br/>
-                    herouhioejgijijoirjgwoijrwgw<br/>
-                    oirhirhiohiehgowirhgoihrwoihrowihr.
+                    {{bookInfo[0].summery}}
                 </p>
-                <div class="bokPrice">מחיר:</div>
+                <div class="bookPrice">{{bookInfo[0].price}}</div>
             </div>
 
 

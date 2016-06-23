@@ -2,43 +2,12 @@
     <div class="container-fluid text-center">
         <div class="col-sm-10 text-center">
             <div class="row">
-                <div class="col-xs-6 col-md-3">
+                <div ng-repeat="book in tastingBooks track by $index" class="col-xs-6 col-md-3">
                     <div class="thumbnail">
-                        <img src="..." alt="...">
+                        <img src="../../img/Covers/{{book.URL_cover}}" alt="...">
                         <div class="caption">
-                            <h3>שם הספר</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><center><a href="#/taste" class="btn btn-default" role="button">לטעימה</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>שם הספר</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><center><a href="#/taste" class="btn btn-default" role="button">לטעימה</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>שם הספר</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><center><a href="#/taste" class="btn btn-default" role="button">לטעימה</a></center></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
-                        <div class="caption">
-                            <h3>שם הספר</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><center><a href="#/taste" class="btn btn-default" role="button">לטעימה</a></center></p>
+                            <h3>{{book.title}}</h3>
+                           <p><center><a href="#/taste/{{book.id}}" class="btn btn-default" role="button">לטעימה</a></center></p>
                         </div>
                     </div>
                 </div>

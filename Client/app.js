@@ -1,7 +1,7 @@
 
 var myApp = angular.module("myApp", ["ngRoute"]);
 
-myApp.config(['$routeProvider',function($routeProvider){
+myApp.config(function($routeProvider){
 	$routeProvider
 		.when('/home', {
 			templateUrl: "views/home.html",
@@ -19,13 +19,13 @@ myApp.config(['$routeProvider',function($routeProvider){
 			templateUrl: "views/paintsCatalog.html",
 			controller: "paintsCatalogController"
 		})
-		.when('/ReadingTasting', {
-			templateUrl: "views/ReadingTasting.html",
-			controller: "ReadingTastingController"
-		})
 		.when('/cart', {
 			templateUrl: "views/cart.html",
 			controller: "cartController"
+		})
+		.when('/readingTasting', {
+			templateUrl: "views/readingTasting.html",
+			controller: "readingTastingController"
 		})
 		.when('/signUp', {
 			templateUrl: "views/signUp.html",
@@ -47,17 +47,18 @@ myApp.config(['$routeProvider',function($routeProvider){
 			templateUrl: "views/booksPublish.html",
 			controller: "booksPublishController"
 		})
-		.when('/taste', {
+		.when('/taste/:id', {
 			templateUrl: "views/taste.html",
 			controller: "tasteController"
 		})
-		.when('/book', {
+		.when('/book/:id', {
 			templateUrl: "views/book.html",
 			controller: "bookController"
 		})
 		.otherwise({redirectTo:'/home'});
-}]);
+});
 
 myApp.controller("booksCatalogController", ["$scope", "$http", booksCatalogController]);
-
-
+myApp.controller("readingTastingController", ["$scope", "$http", readingTastingController]);
+myApp.controller("bookController", ["$scope",  "$routeParams", "$http", bookController]);
+myApp.controller("tasteController", ["$scope", "$routeParams", "$http", tasteController]);
