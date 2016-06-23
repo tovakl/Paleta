@@ -19,7 +19,7 @@ app.get('/',function (req, res) {
 
 
 //listen on port
-var server = app.listen(3000, function(){
+var server = app.listen(port, function(){
     console.log('Server listening at http://' + server.address().address + ':' + server.address().port);
 //     console.log("SERVER IS ON");
 });
