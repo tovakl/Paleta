@@ -2,7 +2,7 @@
 var express = require('express'); // for routing
 var app = express(); //init the server
 var path = require('path');
-//var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname+'/Client'));
 // app.use('/app', express.static('app'));
@@ -20,6 +20,6 @@ app.get('/',function (req, res) {
 
 //listen on port
 var server = app.listen(3000, function(){
-   // console.log('Server listening at http://' + server.address().address + ':' + server.address().port);
-    console.log("SERVER IS ON");
+    console.log('Server listening at http://' + server.address().address + ':' + server.address().port);
+//     console.log("SERVER IS ON");
 });
