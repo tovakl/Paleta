@@ -11,7 +11,7 @@
                                 <div class="img-ph">
                                     <img src="../img/Covers/{{book.URL_cover}}" alt={{books.URL_cover}} height="220" width="160">
                                 </div>
-                                <p><center><a ng-click="addToCart()" class="btn btn-default" role="button">הוסף לסל</a></center></p>
+                                <a><button ng-click="addToCart(book.id);" class="btn btn-default" role="button">הוסף לסל</button></a>
                             </div>
                         </div>
                     </a>

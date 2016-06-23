@@ -55,6 +55,15 @@ myApp.config(function($routeProvider){
 			templateUrl: "views/book.html",
 			controller: "bookController"
 		})
+		.when('/Buy', {
+			templateUrl: "views/Buy.html",
+			controller: "buyController"
+		})
+		.when('/verifyShop', {
+			templateUrl: "views/verifyShop.html",
+			controller: "verifyShopController"
+
+		})
 		.otherwise({redirectTo:'/home'});
 });
 
@@ -62,3 +71,4 @@ myApp.controller("booksCatalogController", ["$scope", "$http", booksCatalogContr
 myApp.controller("readingTastingController", ["$scope", "$http", readingTastingController]);
 myApp.controller("bookController", ["$scope",  "$routeParams", "$http", bookController]);
 myApp.controller("tasteController", ["$scope", "$routeParams", "$http", tasteController]);
+myApp.controller("cartController", ["$scope", "$http", cartController]);

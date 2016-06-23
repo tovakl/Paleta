@@ -1,6 +1,7 @@
 function booksCatalogController($scope, $http){
 
     $scope.books = {};
+    $scope.currentId=0;
     $scope.onLoad=onLoad;
     $scope.addToCart = addToCart;
     onLoad();
@@ -15,9 +16,10 @@ function booksCatalogController($scope, $http){
             });
     }
 
-    function addToCart()
+    function addToCart(id)
     {
-        $http.get()
+        console.log("in add to cart "+ id);
+        $http.get('booksCatalog/addBookToCart/'+id)
             .success(function (data) {
 
             })

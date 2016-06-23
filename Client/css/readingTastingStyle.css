@@ -1,0 +1,38 @@
+.section{
+    display: block;
+    float: right;
+}
+
+.bord{
+    float: right;
+    clear: both;
+    display: inline-block;
+    height: 200px;
+    width: 140px;
+
+
+}
+
+.bord img{
+    padding: 4px;
+    height: 180px;
+    width: 120px;
+}
+
+.cap{
+    clear: both;
+    display: inline-block;
+    float: right;
+    direction: rtl;
+    position: absolute;
+    right:0;
+    padding-right: 20px;
+
+}
+
+.cap p{
+    position: absolute;
+    right: 0;
+    padding-right: 190px;
+    padding-top: 15px;
+}

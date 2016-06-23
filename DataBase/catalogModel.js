@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema= mongoose.Schema;
 
 var BookCatalogSchema = new mongoose.Schema({
-    id : Number,
+    id : String,
     URL_cover: String,
     title : String,
     in_stock : Number,

@@ -12,6 +12,8 @@ app.use('/booksCatalog',require('./Controllers/booksCatalogServerController'));
 app.use('/readingTasting',require('./Controllers/tasteReadingServerController'));
 app.use('/taste',require('./Controllers/tasteServerController'));
 app.use('/booksInfo',require('./Controllers/bookInfoServerController'));
+app.use('/cartView',require('./Controllers/cartViewServerController'));
+
 
 app.get('/',function (req, res) {
       res.sendFile(path.join(__dirname+'/Client/index.html'));

@@ -1,20 +1,23 @@
 .view{
-    float: right;
     display: inline;
-
+    float: right;
+    margin-right: -235px;
 }
 
 .bookImg img{
-    border: 4px solid #888888;
-    float: right;
+    border: 3px solid #9E9E9E;
+
 }
 
 .bookDes{
-    float: right;
     direction: rtl;
+
 }
 
 .bookTitle{
     font-weight: bold;
-    float: right;
+}
+
+.btn{
+    margin-top: 15px;
 }
