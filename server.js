@@ -19,6 +19,7 @@ app.use(session({
 app.use(express.static(__dirname+'/Client'));
 // app.use('/app', express.static('app'));
 
+
 //////////////////////////////////////////////////////////////////////////////////
 app.use('/booksCatalog',require('./Controllers/booksCatalogServerController'));
 app.use('/readingTasting',require('./Controllers/tasteReadingServerController'));
