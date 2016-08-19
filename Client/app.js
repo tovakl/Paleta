@@ -70,5 +70,10 @@ myApp.config(function($routeProvider){
 myApp.controller("booksCatalogController", ["$scope", "$http", booksCatalogController]);
 myApp.controller("readingTastingController", ["$scope", "$http", readingTastingController]);
 myApp.controller("bookController", ["$scope",  "$routeParams", "$http", bookController]);
+myApp.controller("homeController", ["$scope",  "$routeParams", "$http", homeController]);
 myApp.controller("tasteController", ["$scope", "$routeParams", "$http", tasteController]);
-myApp.controller("cartController", ["$scope", "$http", cartController]);
+myApp.controller("cartController", ["$scope","$routeParams", "$http", cartController]);
+myApp.controller("signInController", ["$scope", "$routeParams", "$http", signInController]);
+myApp.controller("signUpController", ["$scope","$routeParams", "$http", signUpController]);
+myApp.controller("indexController", ["$scope","$routeParams", "$http", indexController]);
+myApp.controller("contactController", ["$scope","$routeParams", "$http", contactController]);

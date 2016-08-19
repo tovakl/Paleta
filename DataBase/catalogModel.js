@@ -11,7 +11,7 @@ var BookCatalogSchema = new mongoose.Schema({
     summery : String,
     target : String,
     URL_taste : String,
-    tasting : String,
+    tasting : String
 });
 
 module.exports = BookCatalogSchema;

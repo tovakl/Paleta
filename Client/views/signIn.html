@@ -1,18 +1,18 @@
 
 
-    <div class="col-sm-3 center">
-    <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address/ User Name</label>
-        <input id="inputEmail" class="form-control" placeholder="Email address/ User Name" required="" autofocus="" type="email">
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input id="inputPassword" class="form-control" placeholder="Password" required="" type="password">
-        <div class="checkbox">
-            <label>
-                <input value="remember-me" type="checkbox"> Remember me
-            </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <div class="col-sm-3 center" style="margin-left: 430px">
+    <form class="form-signin" name="inForm">
+        <label for="inputUserName" class="sr-only">שם משתמש</label>
+        <input id="inputUserName" ng-model="user.userName" class="form-control" placeholder="שם משתמש" name="userName" required="true" autofocus="" type="name">
+
+        <label for="inputPassword" class="sr-only">סיסמא</label>
+        <input id="inputPassword" ng-model="user.password" class="form-control" placeholder="סיסמא" name="password" required="true"  type="password">
+
+        <!--<label for="inputConfirmPassword" class="sr-only"> Confirm Password</label>-->
+        <!--<input id="inputConfirmPassword" class="form-control" placeholder="Confirm Password" required="" type="password">-->
+
+        <button ng-click="signing(user)" class="btn btn-lg btn-primary btn-block" type="submit">התחבר</button>
+        <a href="#/home" class="btn btn-lg btn-primary btn-block" >ביטול</a>
     </form>
 </div>
 

@@ -17,11 +17,14 @@
         <script src="controllers/booksCatalogController.js"></script>
         <script src="controllers/cartController.js"></script>
         <script src="controllers/signUpController.js"></script>
+        <script src="controllers/signInController.js"></script>
         <script src="controllers/readingTastingController.js"></script>
         <script src="controllers/tasteController.js"></script>
         <script src="controllers/bookController.js"></script>
         <script src="controllers/buyController.js"></script>
-         <script src="controllers/verifyShopController.js"></script>
+        <script src="controllers/verifyShopController.js"></script>
+        <script src="controllers/contactController.js"></script>
+        <script src="controllers/indexController.js"></script>
 
     <script src="app.js"></script>
 
@@ -39,7 +42,10 @@
 
         <title>PALETA</title>
 </head>
-    <body ng-app="myApp"> <!--[if lte IE 8]>
+    <body ng-app="myApp" ng-controller="indexController">
+
+    <!--<div ng-controller="indexController">-->
+    <!--[if lte IE 8]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]--> <!-- Add your site or application content here -->
 
@@ -70,6 +76,14 @@
                             </div>
                             <div class="collapse navbar-collapse" id="ng-navbar-collapse">
                                 <ul class="nav navbar-nav pull-right">
+                                    <li class="dropdown">
+                                        <a id="name" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> משתמש  |  <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" >
+                                            <li><a ng-href="#/signUp">הרשם</a></li>
+                                            <li><a ng-href="#/signIn">התחבר</a></li>
+                                            <li><a ng-click="signOut()">התנתק</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a ng-href="#/contact">צור קשר | </a></li>
                                     <li><a ng-href="#/cart">סל קניות | </a></li>
                                     <li class="dropdown">
@@ -90,12 +104,12 @@
                                     </li>
                                     <li class="active"><a ng-href="#home">בית | </a></li>
                                 </ul>
-                                <form class="navbar-form pull-left" role="search">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Search">
-                                    </div>
-                                    <button type="submit" class="btn btn-default" style="margin-top: -2.5px">חיפוש</button>
-                                </form>
+                                <!--<form class="navbar-form pull-left" role="search">-->
+                                    <!--<div class="form-group">-->
+                                        <!--<input type="text" class="form-control" placeholder="Search">-->
+                                    <!--</div>-->
+                                    <!--<button type="submit" class="btn btn-default" style="margin-top: -2.5px">חיפוש</button>-->
+                                <!--</form>-->
                             </div>
                         </div>
 
@@ -126,6 +140,6 @@
                         </div>
                     </footer>
         </div>
-
+    <!--</div>-->
     </body>
 </html>
