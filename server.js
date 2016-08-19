@@ -1,4 +1,3 @@
-
 var express = require('express'); // for routing
 var app = express(); //init the server
 var path = require('path');
@@ -16,8 +15,8 @@ app.use(session({
     saveUninitialized: true
 }));
 
-app.use(express.static(__dirname+'/Client'));
-// app.use('/app', express.static('app'));
+//app.use(express.static(__dirname+'/Client'));
+ app.use('/Client', express.static('Client'));
 
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -30,7 +29,8 @@ app.use('/userManage',require('./Controllers/userServerController'));
 
 
 app.get('/',function (req, res) {
-      res.sendFile(path.join(__dirname+'/Client/index.html'));
+      //res.sendFile(path.join(__dirname+'/Client/index.html'));
+      return res.redirect('/Client');
 });
 
 

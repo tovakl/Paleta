@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 {
   "connectionString": "mongodb://paleta:12345@ds021034.mlab.com:21034/paleta_db",
    "apiUrl": "http://localhost:3000/api"
 }
+=======
+{
+  "connectionString": "mongodb://paleta:12345@ds021034.mlab.com:21034/paleta_db",
+   "apiUrl": "http://localhost:3000/api"
+}
+>>>>>>> 6aba41e442f7a63c535f2a6ce38d81a4f1774050
