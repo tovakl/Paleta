@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "paleta",
   "version": "1.0.0",
@@ -46,3 +47,54 @@
     "shelljs": "^0.6.0"
   }
 }
+=======
+{
+  "name": "paleta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web site for paleta books publishing.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Buzz2000/Paleta"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.1.0",
+    "body-parser": "^1.13.2",
+    "ejs": "^2.3.3",
+    "express": "^4.13.0",
+    "express-jwt": "^3.0.1",
+    "express-session": "^1.11.3",
+    "jsonwebtoken": "^5.0.2",
+    "lodash": "^3.10.0",
+    "mongodb": "^2.1.16",
+    "mongoskin": "^2.1.0",
+    "q": "^1.4.1",
+    "request": "^2.58.0",
+    "rootpath": "^0.1.2",
+    "body-parser": "^1.15.0",
+    "connect": "^3.4.1",
+    "mongoose": "^4.4.12",
+    "multer": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.4.5",
+    "bower": "^1.7.7",
+    "http-server": "^0.9.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.8",
+    "karma-junit-reporter": "^0.4.1",
+    "protractor": "^3.2.2",
+    "shelljs": "^0.6.0"
+  }
+}
+>>>>>>> 688736894cfd58185148ad55feb01491b1356235
