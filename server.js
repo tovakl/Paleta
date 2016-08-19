@@ -1,4 +1,4 @@
-
+require('rootpath')();
 var express = require('express'); // for routing
 var app = express(); //init the server
 var path = require('path');
