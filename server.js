@@ -21,8 +21,8 @@ app.use(express.static(__dirname+'/Client'));
 // app.use('/app', express.static('app'));
 
 //////////////////////////////////////////////////////////////////////////////////
-/*app.use('/booksCatalog',require('./Controllers/booksCatalogServerController'));
-app.use('/readingTasting',require('./Controllers/tasteReadingServerController'));
+app.use('/booksCatalog',require('./Controllers/booksCatalogServerController'));
+/*app.use('/readingTasting',require('./Controllers/tasteReadingServerController'));
 app.use('/taste',require('./Controllers/tasteServerController'));
 app.use('/booksInfo',require('./Controllers/bookInfoServerController'));
 app.use('/cartView',require('./Controllers/cartViewServerController'));
