@@ -32,13 +32,27 @@ function loadCartView(req, res) {
         return;
     }
 
-    cartView.find({userName: req.session.user.userName}, function (err, cartData)
-    {
-        if (err)
-            res.send(err);
-        
-        res.json({in:true, msg:"", cart: cartData});
+    cartView.count(function (err, count) {
+        if (!err && count === 0) {
+
+            console.log("No books",count);
+            res.json({in:true, msg:"...אין עדיין ספרים בסל הקניות שלך", cart: null});
+        }
+        else
+        {
+            cartView.find({userName: req.session.user.userName}, function (err, cartData)
+            {
+                if (err)
+                    res.send(err);
+
+
+                res.json({in:true, msg:"", cart: cartData});
+
+            });
+        }
     });
+
+
 }
 
 function reduceStock(res,book){
