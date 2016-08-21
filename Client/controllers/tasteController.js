@@ -5,15 +5,32 @@ function tasteController($scope, $routeParams, $http){
     var bookId = ($routeParams.id || "");
     onLoad();
 
-    function onLoad()
-    {
+    function onLoad(){
+        var text;
+        var signed;
+        console.log("in on load");
 
-        $http.get('/taste/loadTasteById/'+bookId)
+        $http.post('/userManage/getSessionInfo')
             .success(function(data){
-                $scope.taste = data;
+                signed = data.signed;
+                $scope.session = data.session;
+
+                if(signed)
+                {
+                    document.getElementById("name").textContent = $scope.session.user.userName+" | ";
+
+                }
+
+                $http.get('/taste/loadTasteById/'+bookId)
+                    .success(function(data){
+                        $scope.taste = data;
+                    })
+                    .error(function(data){
+                        console.log("ERROR");
+                    });
             })
             .error(function(data){
-                console.log("ERROR");
+                console.log("Error: "+data);
             });
     }
 
