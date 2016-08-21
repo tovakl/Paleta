@@ -4,7 +4,7 @@
             <div class="row">
                 <div ng-repeat="book in books track by $index" class="col-xs-6 col-md-12  section">
                     <div class="thumbnail bord">
-                        <img src="../../img/Covers/{{book.URL_cover}}" alt="{{book.URL_cover}}">
+                        <img src="../Client/img/Covers/{{book.URL_cover}}" alt="{{book.URL_cover}}">
                         <br/>
                         <a><button ng-click="addSameBookToCart(book.id);" class="btn btn-default" role="button" style="float: right;">+</button></a>
                         <a><button ng-click="reduceSameBook(book.id);" class="btn btn-default" role="button" style="float: right; ">-</button></a>
