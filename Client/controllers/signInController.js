@@ -12,13 +12,16 @@ function signInController($scope, $routeParams, $http) {
 
             $http.post('/userManage/signIn', $scope.user)
                 .success(function (response) {
+
                     $scope.result = response;
                     if (response.in == true) {
-                        alert(response.msg);
 
                         $scope.session.user = response.user;
 
+                        alert(response.msg);
+
                         document.getElementById("name").textContent = $scope.session.user.userName + " | ";
+
 
                         console.log('after login');
                         console.log($scope.session.user);
@@ -28,9 +31,15 @@ function signInController($scope, $routeParams, $http) {
 
 
                     }
+                    else if(response.user == null)
+                    {
+                        alert(response.msg);
+                        window.location.replace('#/home');
+                    }
                     else
                         alert(response.msg);
 
+                    
                 })
                 .error(function (error) {
                     console.log('Error: ' + error);
