@@ -6,15 +6,34 @@ function readingTastingController($scope, $http)
     onLoad();
 
     function onLoad(){
-        $http.get('/readingTasting/loadBooksForTaste')
+        var text;
+        var signed;
+        console.log("in on load");
+
+        $http.post('/userManage/getSessionInfo')
             .success(function(data){
-                $scope.tastingBooks = data;
-                console.log("Tasting data "+data);
+                signed = data.signed;
+                $scope.session = data.session;
+
+                if(signed)
+                {
+                    document.getElementById("name").textContent = $scope.session.user.userName+" | ";
+
+                }
+
+                $http.get('/readingTasting/loadBooksForTaste')
+                    .success(function(data){
+                        $scope.tastingBooks = data;
+                        console.log("Tasting data "+data);
+                    })
+                    .error(function(data){
+                        console.log("ERROR IN GETTING DATA OF TASTING.");
+                    });
+
             })
             .error(function(data){
-                console.log("ERROR IN GETTING DATA OF TASTING.");
+                console.log("Error: "+data);
             });
     }
-
 
 }
