@@ -45,7 +45,7 @@ function bookController($scope, $routeParams, $http)
     function addToCart(id)
     {
         console.log("in add to cart "+ id);
-        $http.get('booksCatalog/addBookToCart/'+id)
+        $http.get('/booksCatalog/addBookToCart/'+id)
             .success(function (data) {
                 alert(data.msg);
             })
