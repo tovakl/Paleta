@@ -1,11 +1,8 @@
-function paintCatalogController($scope, $routeParams, $http) {
+function readingTastingController($scope, $http)
+{
 
-
+    $scope.tastingBooks = {};
     $scope.onLoad=onLoad;
-    $scope.title={};
-    $scope.session = {};
-
-
     onLoad();
 
     function onLoad(){
@@ -24,6 +21,15 @@ function paintCatalogController($scope, $routeParams, $http) {
 
                 }
 
+                $http.get('/readingTasting/loadBooksForTaste')
+                    .success(function(data){
+                        $scope.tastingBooks = data;
+                        console.log("Tasting data "+data);
+                    })
+                    .error(function(data){
+                        console.log("ERROR IN GETTING DATA OF TASTING.");
+                    });
+
             })
             .error(function(data){
                 console.log("Error: "+data);
@@ -31,4 +37,3 @@ function paintCatalogController($scope, $routeParams, $http) {
     }
 
 }
-
