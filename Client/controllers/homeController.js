@@ -23,20 +23,6 @@ function homeController($scope, $routeParams, $http) {
                     document.getElementById("name").textContent = $scope.session.user.userName+" | ";
 
                 }
-
-                // if(signed == false)
-                // {
-                //     console.log("no");
-                //     text = '';
-                //     $scope.title = text;
-                // }
-                // else
-                // {
-                //     console.log("yes");
-                //     text= '';
-                //     text="!"+$scope.session.user.userName+"שלום ";
-                //     $scope.title = text;
-                // }
             })
             .error(function(data){
                 console.log("Error: "+data);
