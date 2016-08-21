@@ -77,3 +77,9 @@ myApp.controller("signInController", ["$scope", "$routeParams", "$http", signInC
 myApp.controller("signUpController", ["$scope","$routeParams", "$http", signUpController]);
 myApp.controller("indexController", ["$scope","$routeParams", "$http", indexController]);
 myApp.controller("contactController", ["$scope","$routeParams", "$http", contactController]);
+myApp.controller("booksGraphicController", ["$scope","$routeParams", "$http", booksGraphicController]);
+myApp.controller("booksPrintController", ["$scope","$routeParams", "$http", booksPrintController]);
+myApp.controller("booksPublishController", ["$scope","$routeParams", "$http", booksPublishController]);
+myApp.controller("paintsCatalogController", ["$scope","$routeParams", "$http", paintsCatalogController]);
+myApp.controller("buyController", ["$scope","$routeParams", "$http", buyController]);
+myApp.controller("verifyShopController", ["$scope","$routeParams", "$http", verifyShopController]);
