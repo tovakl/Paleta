@@ -1,31 +1,54 @@
 function cartController($scope, $routeParams, $http) {
 
     $scope.books = {};
+    $scope.title={};
+    $scope.session = {};
    // $scope.currentId = 0;
     $scope.onLoad = onLoad;
     $scope.addSameBookToCart = addSameBookToCart;
     $scope.reduceSameBook = reduceSameBook;
     onLoad();
 
-    function onLoad() {
-        $http.get('/cartView/loadCartView')
-            .success(function (data) {
-                $scope.books = data.cart;
+    function onLoad(){
+        var text;
+        var signed;
+        console.log("in on load");
 
-                console.log("in load");
+        $http.post('/userManage/getSessionInfo')
+            .success(function(data){
+                signed = data.signed;
+                $scope.session = data.session;
 
-                if(data.in == false)
+                if(signed)
                 {
-                    alert(data.msg);
-                    window.location.replace('#/home');
+                    document.getElementById("name").textContent = $scope.session.user.userName+" | ";
+
                 }
 
+                $http.get('/cartView/loadCartView')
+                    .success(function (data) {
+                        $scope.books = data.cart;
+
+                        console.log("in load");
+
+                        if(data.in == false)
+                        {
+                            alert(data.msg);
+                            window.location.replace('#/home');
+                        }
+
+                    })
+                    .error(function (data) {
+                        console.log("Error: " + data);
+                    });
+
             })
-            .error(function (data) {
-                console.log("Error: " + data);
+            .error(function(data){
+                console.log("Error: "+data);
             });
     }
 
+    
     function addSameBookToCart(id) {
 
         console.log("in add same");
