@@ -36,6 +36,11 @@ function cartController($scope, $routeParams, $http) {
                             alert(data.msg);
                             window.location.replace('#/home');
                         }
+                        else if(data.cart == null)
+                        {
+                            document.getElementById("emptyCartTitle").textContent = data.msg;
+                            document.getElementById("emptyCartPic").src = "../Client/img/cart.png";
+                        }
 
                     })
                     .error(function (data) {
