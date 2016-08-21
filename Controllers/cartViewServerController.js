@@ -32,7 +32,7 @@ function loadCartView(req, res) {
         return;
     }
 
-    cartView.count(function (err, count) {
+    cartView.count({userName: req.session.user.userName}, function (err, count) {
         if (!err && count === 0) {
 
             console.log("No books",count);
