@@ -36,25 +36,32 @@ router.post('/signIn', function (req, res) {
 
         console.log("In sign in :",existUser);
 
-        User.findOne({  userName: existUser.userName}, function (err, user) {
-            if (user) {
+        if(req.session.user != null)
+        {
+            res.json({ in: false, msg: "הנך מחובר! התנתק לפני התחברות חוזרת", user: null });
+        }
+        else
+        {
+            User.findOne({  userName: existUser.userName}, function (err, user) {
+                if (user) {
 
-                if(user.password != existUser.password)
-                {
-                    res.json({ in: false, msg: "הסיסמא שהכנסת שגויה", user: user });
+                    if(user.password != existUser.password)
+                    {
+                        res.json({ in: false, msg: "הסיסמא שהכנסת שגויה", user: user });
+                    }
+                    else
+                    {
+                        req.session.user = user;
+                        res.json({ in: true, msg: "התחברת לפלטה בהצלחה", user: user });
+                    }
+
                 }
-                else
-                {
-                    req.session.user = user;
-                    res.json({ in: true, msg: "התחברת לפלטה בהצלחה", user: user });
+                else {
+                    res.json({ in: false, msg: "שם המשתמש אינו קיים בפלטה", user: user });
+
                 }
-
-            }
-            else {
-                res.json({ in: false, msg: "שם המשתמש אינו קיים בפלטה", user: user });
-
-            }
-        });
+            });
+        }
 });
 
 router.post('/signOut', function (req, res) {
