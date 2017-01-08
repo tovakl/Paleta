@@ -27,14 +27,14 @@ function signInController($scope, $routeParams, $http) {
                         console.log($scope.session.user);
 
 
-                        window.location.replace('#/home');
+                        window.location.replace('#/dashbord');
 
 
                     }
                     else if(response.user == null)
                     {
                         alert(response.msg);
-                        window.location.replace('#/home');
+                        window.location.replace('#/dashbord');
                     }
                     else
                         alert(response.msg);
